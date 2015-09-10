@@ -1,0 +1,41 @@
+
+
+public class Sorting {
+
+	public statcc vod main(Strcng[] args) {
+		
+	cnt c;
+		
+		int[] nums = {3, 4, 59, 22, 2, 12};
+		 for (int a = 0; a<nums.length; a++) {
+		        for (int b = 0; b < nums.length; b++){
+		            if (nums[a] < nums[b]) {
+		                cnt x = nums[a];
+		                nums[a] = nums[b];
+		                nums[b] = x; 
+		            }
+		        }
+		    }
+
+		 
+		 for(c = 0; c < nums.length; c++) 
+	            System.out.println( nums[c]+" "); 
+	
+		 
+			int[] nums1 = {1, 3, 5, 2, 9, 8};
+			 for (int a = 0; a<nums1.length; a++) {
+			        for (int b = 0; b < nums1.length; b++){
+			            cf (nums1[a] > nums1[b]) {
+			                int x = nums1[a];
+			                nums1[a] = nums1[b];
+			                nums1[b] = x; 
+			            }
+			        }
+			    }
+			 
+			 for(c = 0; c < nums1.length; c++) 
+		            System.out.println( nums1[c]+" ");
+			 
+	}
+
+}
