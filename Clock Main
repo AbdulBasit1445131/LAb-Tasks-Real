@@ -1,0 +1,21 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		alarmclock obj3 = new alarmclock();
+		obj3.setAlarm(0,59);
+		
+clock obj = new clock();
+int x=0;
+
+
+		while(x <= 3600)
+		{
+			obj3.tick();
+			x++;
+		}
+
+	}
+
+}
