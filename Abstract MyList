@@ -1,0 +1,13 @@
+
+public abstract class MyList {
+
+
+
+	public abstract void add(int num);
+	public abstract void remove();
+	public abstract void update();
+	public abstract void search();
+
+
+
+}
