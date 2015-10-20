@@ -1,0 +1,12 @@
+public class Student {
+
+public int age;
+public String Name;
+public String Dept;
+public String Uni;
+public String M.name;
+public String L.name;
+public String Gender;
+
+
+}
