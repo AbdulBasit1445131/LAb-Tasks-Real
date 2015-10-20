@@ -1,0 +1,65 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+//MyLinkedList MyList1 = new MyLinkedList();
+		
+		//MyList1.add(12);
+		
+		/*Node list = new Node();
+		Node mynode = new Node();
+		
+		
+		mynode.num=6;
+		mynode.self=mynode;
+		mynode.next=null;
+		mynode.previous=list;
+		
+		
+		list.num=4;
+		list.self=list;
+		list.next=mynode;
+		list.previous=null;
+		
+		
+		
+		
+		while (list.next!=null)
+		{
+			System.out.println(list.num);
+			list=list.next;
+		}*/
+		
+	/*	Node A = new Node();
+		Node B = new Node();
+		Node C = new Node();
+		
+		A.num=3;
+		B.num=2;
+		C.num=6;
+		
+		A.self=A;
+		A.next=B;
+		A.previous=null;
+		
+		B.self=B;
+		B.next=C;
+		B.previous=A;
+		
+		C.self=C;
+		C.next=null;
+		C.previous=B; */
+			
+
+	MyLinkedList ABC =new MyLinkedList();
+		
+	ABC.add(3);	
+  /*ABC.update();*/
+	ABC.search();
+		
+	}
+
+}
