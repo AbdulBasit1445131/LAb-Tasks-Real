@@ -1,0 +1,79 @@
+
+public class MyLinkedList extends MyList  {
+
+
+
+	private Node list;
+	private Node First = null;
+	private Node Last = null;
+	
+	public void add(int num){
+		
+		list = new Node();
+		list.num=num;
+		list.self=list;
+		list.next=null;
+		list.previous=null;
+		
+		if(First == Last && Last != null)
+		{
+			First.next = list;
+		}
+		
+		
+		if(First == null)
+		{
+			First = list;
+		}
+		
+		if(Last == null)
+		{
+			Last = list;
+		}
+		
+		System.out.println(list.num);
+		
+	}
+	public void remove(){
+	
+	list = list.previous;
+	
+	list.next= null;
+	
+	
+	}
+	public void update(){
+		
+		while(Last.next == null){
+			
+			if(list.self==list){
+				list.num=7;
+			}
+			
+			System.out.println(list.num);
+			
+		}
+		
+		list =list.next;
+		
+	}
+	public void search(){
+
+		
+		
+		while(list.next == null){
+			
+			if(list.num==4){
+			System.out.println("this node"+list);
+			}
+			else
+			{
+				System.out.println("does not exist");
+			}
+		
+			list =list.next;
+		}
+	}
+}
+
+
