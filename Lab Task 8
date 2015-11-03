@@ -1,0 +1,81 @@
+
+public class MainD {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		LinkList ABD = new LinkList();
+		
+		ABD.Create(3);
+		ABD.Create(5);
+		ABD.Display();
+	
+		
+		
+	}
+
+}
+
+
+
+public class Node {
+
+	
+         int val;
+         Node Add;
+         
+         Node Prev;
+         
+	
+	
+}
+
+
+
+public class LinkList {
+
+	public Node List;
+	
+	public void Create(int val){
+		
+	Node Temp;
+	
+		
+	if(List==null){	
+		List= new Node();
+	
+		List.val=val;
+	}
+	else	
+	{
+		Temp= List;
+		List= new Node();
+		List.val=val;
+		Temp.Add = List;
+		List = Temp;
+		
+		
+		
+	}
+	}
+	public void Display(){
+		Node Temp;
+		
+		Temp=List;
+		
+		do{
+	
+			System.out.println(Temp.val);
+			Temp=Temp.Add;
+			
+		}while(Temp.Add != null);
+	
+		
+	}
+	
+	
+	
+		
+	}
+	
+	
