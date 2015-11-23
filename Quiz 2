@@ -1,0 +1,163 @@
+Abdul Basit Aftab 1445131
+
+
+Q1:
+public class MainDefault {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int c;
+		int sw;
+		int d;
+		int k;
+		int n;
+		k=0;
+		
+		int Numbers[]={89,25,01,99,0,45,7,3,65,100};	
+		n=Numbers.length;
+	
+		for (c = 0; c < ( n - 1 ); c++) {
+	    for (d = 0; d < n- c - 1; d++) {
+	    if (Numbers[d] > Numbers[d+1]) 
+	      {
+	    	 sw       = Numbers[d];
+	    	 Numbers[d]   = Numbers[d+1];
+	         Numbers[d+1] = sw;
+		     k++;
+	      
+	      }
+		      }
+		    }
+		 
+		   
+		   for (c = 0; c <10 ; c++) 
+		   {  System.out.print(Numbers[c]+",");}
+		   
+		   System.out.println("Total Number Of Comparisons" +"="+ k);
+		  
+
+}
+}
+
+
+
+Q2:
+public class MainDef {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+		int Numbers[]={89,25,01,99,0,45,7,3,65,100};
+		
+		         
+		int c;
+		
+		    int a = Numbers.length;
+		    for (int j = 1; j < a; j++) {
+		        int key = Numbers[j];
+		        int i = j-1;
+		        while ( (i > -1) && ( Numbers[i] > key ) ) {
+		            Numbers [i+1] = Numbers [i];
+		            i--;
+		    
+		        }
+		        Numbers[i+1] = key;
+	  
+		    }
+		
+		   
+		    for (c = 0; c <10 ; c++) 
+			   {  System.out.print(Numbers[c]+",");}
+			   
+		
+}
+}
+
+
+Q3:
+public class InsertionSort {
+
+	
+	
+	public int Array[]={55,07,2,3,4,9,77,34,64,14,11};
+	
+	
+	
+	public void Sort(){
+		
+        
+		int c;
+		
+		    int a = Array.length;
+		    for (int j = 1; j < a; j++) {
+		        int key = Array[j];
+		        int i = j-1;
+		        while ( (i > -1) && ( Array[i] > key ) ) {
+		        	Array [i+1] = Array [i];
+		            i--;
+		    
+		        }
+		        Array[i+1] = key;
+	  
+		    }
+		
+		   
+		    for (c = 0; c <10 ; c++) 
+			   {  System.out.print(Array[c]+",");}
+			   
+	}
+		
+	
+}
+
+public class ShellSort {
+
+	
+	
+	
+	public void SSort(){
+		
+		
+		
+		
+	}
+	
+	public class ShellnSort {
+
+		
+		
+		public int Array[]={55,07,2,3,4,9,77,34,64,14,11};
+		
+		
+		
+		public void Sort(){
+			
+	        
+			int c;
+			
+			    int a = Array.length;
+			    for (int j = 1; j < a; j++) {
+			        int key = Array[j];
+			        int i = j-1;
+			        while ( (i > -1) && ( Array[i] > key ) ) {
+			        	Array [i+1] = Array [i];
+			            i--;
+			    
+			        }
+			        Array[i+1] = key;
+		  
+			    }
+			
+			   
+			    for (c = 0; c <10 ; c++) 
+				   {  System.out.print(Array[c]+",");}
+				   
+		}
+		
+		
+		
+		
+	}
+
