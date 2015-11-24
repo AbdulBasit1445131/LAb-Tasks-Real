@@ -1,0 +1,153 @@
+Q1:
+package com.example.temp.q1final;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Display;
+import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+
+import java.util.Scanner;
+import java.util.jar.Attributes;
+
+public class MainActivity extends AppCompatActivity {
+
+
+    String[] Name;
+    int[] Rno;
+    int[] m1;
+    int[] m2;
+    int[] a1;
+    int[] total;
+
+    int i=0;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+                EditText edbx1 = (EditText) findViewById(R.id.ed1);
+                EditText edbx2 = (EditText) findViewById(R.id.ed2);
+                EditText edbx3 = (EditText) findViewById(R.id.ed3);
+                EditText edbx4 = (EditText) findViewById(R.id.ed4);
+                EditText edbx5 = (EditText) findViewById(R.id.ed5);
+                EditText edbx6 = (EditText) findViewById(R.id.ed6);
+
+                Name[i] = edbx1.getText().toString();
+                Rno[i] = Integer.parseInt(edbx3.getText().toString());
+                m1[i] = Integer.parseInt(edbx3.getText().toString());
+                m2[i] = Integer.parseInt(edbx4.getText().toString());
+                a1[i] = Integer.parseInt(edbx5.getText().toString());
+
+                total[i] = Integer.parseInt(edbx6.getText().toString());
+
+                i++;
+
+
+            }
+        });
+    }
+
+    public void buttonpress(View view) {
+        Intent intent = new Intent(this, DisplayMain22Activity.class);
+    }
+
+
+
+
+
+
+
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
+Q2:
+
+import java.util.Scanner;
+       public class Defaulter {
+
+	  public static void main(String[] args) {
+		 // TODO Auto-generated method stub
+
+		
+		    int c, first, last, middle, n, search, array[];
+		 
+		    Scanner in = new Scanner(System.in);
+		    System.out.println("Enter number of elements");
+		    n = in.nextInt(); 
+		    array = new int[n];
+		 
+		    System.out.println("Enter " + n + " integers");
+		 
+		 
+		    for (c = 0; c < n; c++)
+		      array[c] = in.nextInt();
+		 
+		    System.out.println("Enter value to find");
+		    search = in.nextInt();
+		 
+		    first  = 0;
+		    last   = n - 1;
+		    middle = (first + last)/2;
+		 
+		    while( first <= last )
+		    {
+		      if ( array[middle] < search )
+		        first = middle + 1;    
+		      else if ( array[middle] == search ) 
+		      {
+		        System.out.println(search + " found at location " + (middle + 1) + ".");
+		        break;
+		      }
+		      else
+		         last = middle - 1;
+		 
+		      middle = (first + last)/2;
+		   }
+		   if ( first > last ){
+		      System.out.println(search + " is not present in the list.\n");
+		  }
+		}	
+		
+		
+	}
